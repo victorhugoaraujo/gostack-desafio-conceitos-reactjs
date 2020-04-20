@@ -16,7 +16,6 @@ function App() {
     const response = await api.post('repositories', {
       title: 'Umbriel',
       url: 'https://github.com/rocketseat/umbriel',
-      title: 'Desafio ReactJS',
       techs: ['React', 'Node.js'],
     });
     setRepositories([...repositories, response.data]);
