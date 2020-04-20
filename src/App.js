@@ -14,9 +14,10 @@ function App() {
   }, []);
   async function handleAddRepository() {
     const response = await api.post('repositories', {
-      title: 'Umbriel',
-      url: 'https://github.com/rocketseat/umbriel',
-      techs: ['React', 'Node.js'],
+      title: 'Desafio conceitos Node.js',
+      url:
+        'https://github.com/victorhugoaraujo/gostack-desafio-fundamentos-nodejs-typescript',
+      techs: ['Node.js'],
     });
     setRepositories([...repositories, response.data]);
   }
